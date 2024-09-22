@@ -1,0 +1,80 @@
+/* Main container that fills the viewport */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background-image: url('./background/background1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Inner container for alignment */
+.inner {
+  background-color: rgba(255, 255, 255, 0.899);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Title of the page */
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Short description under the title */
+.description {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Button container to style buttons */
+.buttonContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Style for buttons */
+.button {
+  padding: 14px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  color: white;
+  background-color: #0070f3;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for buttons */
+.button:hover {
+  background-color: #005bb5;
+}
+
+/* Mobile friendly adjustments */
+@media (max-width: 600px) {
+  .buttonContainer {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .inner {
+    padding: 30px;
+  }
+}
